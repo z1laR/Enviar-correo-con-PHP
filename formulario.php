@@ -11,7 +11,7 @@ $captcha = '';
 function post_captcha($user_response) {
     $fields_string = '';
     $fields = array(
-        'secret' => '6LcD_KgUAAAAAKh2RdVgoPdSGGj9gY_gbuT0B7mT',
+        'secret' => 'mi-clave-secreta',
         'response' => $user_response
     );
     foreach($fields as $key=>$value)
