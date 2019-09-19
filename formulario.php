@@ -155,20 +155,20 @@ $cuerpo = '
                 <br>
             </div>
             <div class="row mt-3">
-                <p class="text-uppercase col-12 col-sm-12 col-md-3"><b>Company: </b></p>
-                <p class="col-12 col-sm-12 col-md-3">'.$empresa.'</p>
-                <p class="text-uppercase col-12 col-sm-12 col-md-3"><b>Contact person: </b></p>
-                <p class="col-12 col-sm-12 col-md-3">'.$nombre.'</p>
+                <p class="text-uppercase col-12"><b>Company: </b></p>
+                <p class="col-12">'.$empresa.'</p>
+                <p class="text-uppercase col-12"><b>Contact person: </b></p>
+                <p class="col-12">'.$nombre.'</p>
             </div>
             <div class="row">
-                <p class="text-uppercase col-12 col-sm-12 col-md-3"><b>Email: </b></p>
-                <p class="col-12 col-sm-12 col-md-3">'.$email.'</p>
-                <p class="text-uppercase col-12 col-sm-12 col-md-3"><b>Telephone: </b></p>
-                <p class="col-12 col-sm-12 col-md-3">'.$telefono.'</p>        
+                <p class="text-uppercase col-12"><b>Email: </b></p>
+                <p class="col-12">'.$email.'</p>
+                <p class="text-uppercase col-12"><b>Telephone: </b></p>
+                <p class="col-12">'.$telefono.'</p>        
             </div>
             <div class="row">
-                <p class="text-uppercase col-12 col-sm-12 col-md-12 text-center"><b>Message: </b></p>
-                <p class="col-12 col-sm-12 col-md-12 text-justificy">'.$mensaje.'</p>
+                <p class="text-uppercase col-12 text-center"><b>Message: </b></p>
+                <p class="col-12 text-justificy">'.$mensaje.'</p>
             </div>
             </div>
 
@@ -199,12 +199,8 @@ $asunto = 'Nuevo mensaje para Enviro Solutions';
 //ENVIAR CORREO
 if($error == '')
 {
-    /*$success = mail($email, $asunto, $cuerpo, $enviarA);
-    echo 'exito';*/
-
     mail($email, $asunto, $cuerpo, $enviarA);
     echo 'exito';
-
 }
 else
 {
