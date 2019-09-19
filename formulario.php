@@ -190,7 +190,6 @@ $enviarA .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 
 //DIRECCIÓN DE EMISOR
 $enviarA .= "To: Sales <sales@envirosolutions.com>" . "\r\n";
-$enviarA .= "To: Omar MP <z.1laR@hotmail.com>" . "\r\n";
 $enviarA .= "From: Enviro Solutions <sales@envirosolutions.com>" . "\r\n";
 
 //ASUNTO
